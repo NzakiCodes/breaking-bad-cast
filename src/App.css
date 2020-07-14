@@ -2,16 +2,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: url('./images/bg.jpg');
   background-attachment: fixed;
-  color:white;
+  color: white;
   padding: 20px;
 }
-::selection{
+
+::selection {
   background-color: #008f45;
 }
+
 .card {
   background-color: transparent;
   width: 300px;
-  height: 350px;
+  height: 370px;
   perspective: 1000px;
   margin: 10px;
 }
@@ -23,17 +25,20 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.card-front img{
+
+.card-front img {
   width: 100%;
   height: 100%;
 }
+
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -50,43 +55,50 @@ body {
   background-color: #333;
   color: white;
   transform: rotateY(180deg);
+  padding: 2px 4px 0px 4px;
+  position: relative;
 }
-ul{
-list-style-type:none;
-/* display:flex;
-max-width:300px; */
 
+h1 {
+  font-size: 29px;
+  font-weight: bold;
 }
-li{
-  margin: 12px;
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 1px;
   text-align: left;
   font-size: 17px;
 }
-li strong{
+
+li strong {
   font-size: 19px;
 }
-.box{
-  display:flex;
+
+.box {
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.box-item{
-  order: 4;
-  flex-grow: 1;
-}
-.center{
-  display:flex;
+
+.center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.search{
-  display:flex;
+
+.search {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
 }
-.search input{
+
+.search input {
   padding: 8px 30px 8px 20px;
   font-size: 19px;
   width: 400px;
@@ -94,6 +106,19 @@ li strong{
   color: #004b24;
   border: 2px solid #008f45;
 }
-.serach input::placeholder{
+
+.serach input::placeholder {
   color: #008f45;
+}
+
+hr {
+  max-width: 270px;
+}
+
+.character-logo {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  bottom: 10px;
+  right: 10px;
 }
