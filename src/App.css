@@ -33,7 +33,7 @@ body {
   height: 100%;
 }
 
-.card:hover .card-inner {
+.card:hover .card-inner{
   transform: rotateY(180deg);
 }
 
@@ -101,7 +101,7 @@ li strong {
 .search input {
   padding: 8px 30px 8px 20px;
   font-size: 19px;
-  width: 400px;
+  width: 280px;
   border-radius: 30px;
   color: #004b24;
   border: 2px solid #008f45;
