@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../images/logo.png'
 
 const CharacterItem = ({ character }) => {
+    const cardStyleclick = {transform: "rotateY(180deg)"};
+    const [cardStyle, setCardStyle] = useState({})
     return (
-        <div className="card">
-            <div className="card-inner">
+        <div className="card" onClick={()=>setCardStyle(cardStyleclick)} onBlur={()=>setCardStyle({})}>
+            <div className="card-inner" style={cardStyle}>
                 <div className="card-front">
                     <img src={character.img} alt="" />
                 </div>
